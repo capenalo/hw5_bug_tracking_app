@@ -1,0 +1,28 @@
+TDD requirements for Bug:
+
+title: string
+description: text
+issue_type: enum - issue, enhancement, feature
+priority: enum - low, medium, high
+status: enum - open, closed, monitor
+
+
+- Title and description cannot be blank whenever a bug is created or edited.
+- Issue_type, priority and status must have valid values (you should represent 
+    these values as enumerated types.)
+- The default value of issue_type should be feature.
+- The default value of priority should be medium.
+- The default value of status should be open.
+
+
+TDD requirements for User:
+
+fname:string
+lname:string
+email:string
+thumbnail:string
+
+- lname, fname, email cannot be blank whenever an author is created or edited.
+- email must be unique and be a valid format for an email address.
+- thumbnail must end with either .png, .jpg, or .gif. It is ok to leave the 
+thumbnail field blank.

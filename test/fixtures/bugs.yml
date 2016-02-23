@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyBug1
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  issue_type: 1
+  priority: 1
+  status: 1
+  user: :one
+
+two:
+  title: MyBug2
+  description: Donec a diam lectus. Sed sit amet ipsum mauris.
+  issue_type: 1
+  priority: 1
+  status: 1
+  user: :one

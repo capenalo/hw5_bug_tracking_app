@@ -18,7 +18,12 @@ class BugsControllerTest < ActionController::TestCase
 
   test "should create bug" do
     assert_difference('Bug.count') do
-      post :create, bug: { description: @bug.description, issue_type: @bug.issue_type, priority: @bug.priority, status: @bug.status, title: @bug.title, user_id: @bug.user_id }
+      post :create, bug: { description: @bug.description, 
+                           issue_type: @bug.issue_type, 
+                           priority: @bug.priority, 
+                           status: @bug.status, 
+                           title: @bug.title, 
+                           user_id: @bug.user_id }
     end
 
     assert_redirected_to bug_path(assigns(:bug))
@@ -35,7 +40,12 @@ class BugsControllerTest < ActionController::TestCase
   end
 
   test "should update bug" do
-    patch :update, id: @bug, bug: { description: @bug.description, issue_type: @bug.issue_type, priority: @bug.priority, status: @bug.status, title: @bug.title }
+    patch :update, id: @bug, bug: { description: @bug.description, 
+                                    issue_type: @bug.issue_type, 
+                                    priority: @bug.priority, 
+                                    status: @bug.status, 
+                                    title: @bug.title,
+                                    user_id: @bug.user_id }
     assert_redirected_to bug_path(assigns(:bug))
   end
 

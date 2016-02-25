@@ -6,7 +6,7 @@ class UserTest < ActiveSupport::TestCase
     @user = User.create(fname: "Maximun", 
                         lname: "Bugger",
                         email: "maxbug@bugsbugsbugs.com",
-                        thumbnail: "mas.png")
+                        thumbnail: "max.png")
   end
   
   test "User must be valid" do

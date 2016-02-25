@@ -2,7 +2,11 @@
 
 <p>
   <strong>User:</strong>
-  <%= (@bug.user.try(:lname) || "NA")%>
+  <% if @name %>
+  <%= @name %>
+  <% else %>
+  NA
+  <% end %>
 </p>
 
 <p>
